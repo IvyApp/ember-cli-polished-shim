@@ -1,5 +1,7 @@
 # ember-cli-polished-shim
 
+[![Build Status](https://travis-ci.org/IvyApp/ember-cli-polished-shim.svg?branch=master)](https://travis-ci.org/IvyApp/ember-cli-polished-shim)
+
 ## Installation
 
 ```sh
