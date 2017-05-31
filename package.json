@@ -1,24 +1,31 @@
 {
   "name": "ember-cli-polished-shim",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "polished for Ember apps",
   "keywords": [
-    "ember-addon"
+    "css-in-js",
+    "ember-addon",
+    "inline-styles",
+    "polished",
+    "styled-components"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Dray Lacy",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/IvyApp/ember-cli-polished-shim",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^6.0.0"
+    "broccoli-funnel": "^1.2.0",
+    "broccoli-merge-trees": "^2.0.0",
+    "ember-cli-babel": "^6.0.0",
+    "polished": "^1.1.2"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
