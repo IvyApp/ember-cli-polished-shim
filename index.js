@@ -12,9 +12,7 @@ module.exports = {
     var polishedTree = this.treeGenerator(polishedPath);
 
     polishedTree = new Funnel(polishedTree, {
-      include: [
-        '**/*.js'
-      ]
+      include: ['**/*.js']
     });
 
     if (!tree) {
