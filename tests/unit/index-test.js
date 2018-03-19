@@ -10,6 +10,7 @@ module('Unit | Polished | Tests', function() {
     'fontFace',
     'hiDPI',
     'hideText',
+    'hideVisually',
     'normalize',
     'placeholder',
     'radialGradient',
@@ -24,6 +25,7 @@ module('Unit | Polished | Tests', function() {
     'complement',
     'darken',
     'desaturate',
+    'getLuminance',
     'grayscale',
     'hsl',
     'hsla',
@@ -33,6 +35,7 @@ module('Unit | Polished | Tests', function() {
     'opacify',
     'parseToHsl',
     'parseToRgb',
+    'readableColor',
     'rgb',
     'rgba',
     'saturate',
@@ -41,6 +44,7 @@ module('Unit | Polished | Tests', function() {
     'setSaturation',
     'shade',
     'tint',
+    'toColorString',
     'transparentize',
 
     // Shorthands
