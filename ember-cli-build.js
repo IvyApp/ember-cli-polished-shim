@@ -4,7 +4,12 @@ const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function(defaults) {
   let app = new EmberAddon(defaults, {
-    // Add options here
+    babel: {
+      plugins: [
+        // Allow object spread syntax: { foo, ...bar }
+        'babel-plugin-transform-object-rest-spread'
+      ]
+    }
   });
 
   /*

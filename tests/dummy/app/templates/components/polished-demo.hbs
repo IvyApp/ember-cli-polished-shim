@@ -1,0 +1,86 @@
+<ul class={{css styles.swatches}}>
+  <li class={{css styles.swatch styles.base}}>
+    <label>
+      base
+      <select onchange={{action (mut baseColor) value='target.value'}}>
+        {{#each colors as |color|}}
+          <option selected={{eq color baseColor}} value="{{color}}">{{color}}</option>
+        {{/each}}
+      </select>
+    </label>
+    <code>{{rgb baseColor}}</code>
+  </li>
+
+  <li class={{css styles.swatch styles.adjustHue}}>
+    <label>
+      adjustHue
+      {{input max=360 min=0 step=30 type='range' value=adjustHueAmount}}
+      {{adjustHueAmount}}
+    </label>
+    <code>{{rgb adjustHue}}</code>
+  </li>
+
+  <li class={{css styles.swatch styles.complement}}>
+    complement
+    <code>{{rgb complement}}</code>
+  </li>
+
+  <li class={{css styles.swatch styles.desaturate}}>
+    <label>
+      desaturate
+      {{input max=1 min=0 step=0.1 type='range' value=desaturateAmount}}
+      {{desaturateAmount}}
+    </label>
+    <code>{{rgb desaturate}}</code>
+  </li>
+
+  <li class={{css styles.swatch styles.invert}}>
+    invert
+    <code>{{rgb invert}}</code>
+  </li>
+
+  <li class={{css styles.swatch styles.lighten}}>
+    <label>
+      lighten
+      {{input max=1 min=0 step=0.1 type='range' value=lightenAmount}}
+      {{lightenAmount}}
+    </label>
+    <code>{{rgb lighten}}</code>
+  </li>
+
+  <li class={{css styles.swatch styles.tint}}>
+    <label>
+      tint
+      {{input max=1 min=0 step=0.1 type='range' value=tintAmount}}
+      {{tintAmount}}
+    </label>
+    <code>{{rgb tint}}</code>
+  </li>
+
+  <li class={{css styles.swatch styles.darken}}>
+    <label>
+      darken
+      {{input max=1 min=0 step=0.1 type='range' value=darkenAmount}}
+      {{darkenAmount}}
+    </label>
+    <code>{{rgb darken}}</code>
+  </li>
+
+  <li class={{css styles.swatch styles.shade}}>
+    <label>
+      shade
+      {{input max=1 min=0 step=0.1 type='range' value=shadeAmount}}
+      {{shadeAmount}}
+    </label>
+    <code>{{rgb shade}}</code>
+  </li>
+
+  <li class={{css styles.swatch styles.transparentize}}>
+    <label>
+      transparentize
+      {{input max=1 min=0 step=0.1 type='range' value=transparentizeAmount}}
+      {{transparentizeAmount}}
+    </label>
+    <code>{{rgba transparentize}}</code>
+  </li>
+</ul>
